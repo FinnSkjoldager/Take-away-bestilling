@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.jumbotron {
+  padding-top: 0px;
+  background: #fff;
+}
+
+.form-control1,
+.input-group-text1 {
+  border: 1px solid #0080ff;
+}
+
+.style-table.table-hover tbody tr:hover {
+  cursor: pointer;
+}
+.style-table {
+  cursor: pointer;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  /* min-width: 400px; */
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.style-table thead th {
+  background-color: #4d9fde;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: left;
+}
+.style-table thead tr td {
+  background-color: #6dead1;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+}
+.style-table th,
+.style-table td {
+  padding: 12px 15px;
+}
+.style-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.style-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.style-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.style-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+.tablebutton {
+  width: 50px;
+}
+.style-form-header {
+  background-color: #6dead1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 14px;
+  }
+}
+.button1 {
+  font-size: 12pt !important;
+  border: solid 1px black !important;
+  color: black;
+  border-radius: 5px !important;
+}
