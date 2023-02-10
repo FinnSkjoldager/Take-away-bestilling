@@ -5,4 +5,5 @@ export class Order {
     PMethod: string;
     GTotal: number;
     DeletedOrderItemIDs: string;
+    Payid: number;
 }

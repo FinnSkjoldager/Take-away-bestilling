@@ -48,6 +48,7 @@ class OrderController extends Controller
         $order->GTotal = $request->GTotal;
         $order->DeletedOrderItemIDs = $request->DeletedOrderItemIDs;
         $order->DeletedOrderItemIDs = 0;
+        $order->Paid = $request->Paid;
         return $order;
     }
 
@@ -75,12 +76,12 @@ class OrderController extends Controller
             //error_log('$itemid '.$itemid);
             //return "OK";
             //$order->OrderItems()->attach($itemid,['Quantity'=> $item['Quantity']]);
-            $order->OrderItems()->attach($itemid,['Quantity'=> $item['Quantity']]);
+            $order->OrderItems()->attach($itemid,['Quantity'=> $item['Quantity'],'Paid'=> $item['Paid']]);
         } 
         $order->save();
        // return $this->show($request->id);
         return response()->json([
-            "message" => "Medlem not found"
+            "message" => "Order saved"
         ], 200);
    }
     public function show($id)

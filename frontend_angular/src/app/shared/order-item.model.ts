@@ -6,4 +6,5 @@ export class OrderItem {
     Quantity: number;
     Price:number;
     Total:number;
+   // Paid: number;
 }

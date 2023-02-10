@@ -14,7 +14,10 @@ class CustomerSeeder extends Seeder
             'Name' => $name
         ]);
     }
-    public function run()
+    public function run(){
+        $this.doRun();
+    }
+    public function doRun()
     {
         Customer::truncate();
         //https://www.stm.dk/statsministeren/statsministre-siden-1848/

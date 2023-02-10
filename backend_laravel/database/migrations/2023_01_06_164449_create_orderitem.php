@@ -14,6 +14,7 @@ return new class extends Migration
             $table->bigInteger('OrderID');
             $table->integer('ItemID');
             $table->integer('Quantity');
+            $table->integer('Paid');
 	    });
     }
     public function down()

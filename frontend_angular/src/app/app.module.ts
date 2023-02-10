@@ -17,6 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderComponent } from './orders/order/order.component';
 import { OrderItemsComponent } from './orders/order-items/order-items.component';
+import { CustomOrderComponent } from './custom-order/custom-order.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { OrderItemsComponent } from './orders/order-items/order-items.component'
     OrdersComponent,
     OrderComponent,
     OrderItemsComponent,
+    CustomOrderComponent,
   ],
   imports: [
     BrowserModule,

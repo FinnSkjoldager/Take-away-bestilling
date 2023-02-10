@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-    apiURL3 : 'http://localhost:8000/api',
-    apiURL : 'http://localhost/api',
-    apiURL2 : 'https://finnskjold.dk/api'
+    apiURL : 'http://localhost:8000/api',
+    apiURL2 :  'http://localhost/api',
+    apiURL1  : 'https://finnskjold.dk/api'
 };
 
 /*

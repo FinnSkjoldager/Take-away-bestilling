@@ -18,7 +18,7 @@ export class OrderService {
       ...this.formData,
       OrderItems: this.orderItems
     };
-    if (false){
+    if (true){
     console.log("SAVE ORDER START");
     console.log(JSON.stringify(body));
     console.log("SAVE ORDER END");

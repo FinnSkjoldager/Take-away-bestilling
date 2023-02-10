@@ -16,7 +16,8 @@ class Order extends Model
         CustomerID','
         PMethod','
         GTotal','
-        DeletedOrderItemIDs'
+        DeletedOrderItemIDs','
+        Paid'
     ];
     public function customer()
     {

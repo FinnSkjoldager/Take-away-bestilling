@@ -13,6 +13,7 @@ class OrderItem extends Model
     ['
         OrderID','
         ItemID','
-        Quantity
+        Quantity','
+        Paid
     '];
 }

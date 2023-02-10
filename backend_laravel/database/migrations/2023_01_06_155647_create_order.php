@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('PMethod');
             $table->integer('GTotal');
             $table->decimal('DeletedOrderItemIDs');
+            $table->integer('Paid');
         });
     }
 

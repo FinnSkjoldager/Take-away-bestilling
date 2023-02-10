@@ -11,10 +11,14 @@ class ItemSeeder extends Seeder
     function create($name, $price){
         Item::create([
             'Name' => $name,
-            'Price' => $price
+            'Price' => $price,
+            'Quantity' => fake()->numberBetween(0, 30)
         ]);
     }
-    public function run()
+    public static function run(){
+        $this->doRun();
+    }
+    public function doRun()
     {  
         Item::truncate();
         /*
